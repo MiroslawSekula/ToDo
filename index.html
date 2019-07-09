@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <title> Serwis Obsługi Klienta </title>
+</head>
+<body>
+    <div id="containerFlex" class="container">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbarCustom">
+            <form class="form-inline">
+                <div style=display:inline>
+                    <input class="form-control mr-sm-2" type="text" placeholder="Firstname" id="Fname"charset="UTF-8">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Lastname" id="Lname"charset="UTF-8">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Email" id="Ename"charset="UTF-8">
+                    <input class="form-control mr-sm-2" type="text" placeholder="tel" id="Tnumber"charset="UTF-8">
+                </div>
+                <button class="btn btn-primary btnNaw" type="button">empty</button>
+                <button class="btn btn-primary btnNaw" type="button"id='btnRefresh'>refresh </button>
+                <button class="btn btn-primary btnNaw" type="button"id= "cleanTheWindow">clean window </button>
+                <button class="btn btn-primary btnNaw" type="button"id="btnSaveInputFLET">save the data</button>
+                <button class="btn btn-primary btnNaw" type="button"id="btnEdit">save the edit</button>
+            </form>
+        </nav>
+        <div id="containerMaster">
+            <nav id="containerButtonsVertical">
+                <button type="button" class="btn btn-primary testowy" id ="listUsers">list Users</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+                <button type="button" class="btn btn-primary testowy">empty</button>
+            </nav>
+            <div id="contPresentation">
+                <div class="tableStyle">
+                    <table class="table costomTable" id="costomTable">
+                        <thead>
+                            <tr class="costomTableHead">
+                                <th>Edit</th>
+                                <th>Firstname</th>
+                                <th>Lastname</th>
+                                <th>Email</th>
+                                <th>tel</th>
+                                <th>id</th>
+                            </tr>
+                        </thead>
+                        <tbody id="arrayUsers">
+                            <tr class="table-primary" id="requestPrimary"></tr>
+                            <tr class="table-success" id="requestSuccess"></tr>
+                            <tr class="table-danger" id="requestDanger"></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container" id="containerFoter">
+        <h3>Stopka do wykończenia</h3>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="files_js/scriptF.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
